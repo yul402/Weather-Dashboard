@@ -26,5 +26,5 @@ THEN I am again presented with current and future conditions for that city
 ```
 
 ## Mock-Up
-![Demonstration](Assets/WeatherDashboard_01.png)
+![](Assets/WeatherDashboard_01.png)
 
