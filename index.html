@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/Style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+      <!-- Page header are created using the container -->
+    <header class="container-fluid bg-dark text-light d-flex">
+        <h1 class="mx-auto">Weather Dashboard</h1>
+    </header>
+
+    <!-- Main Page: two column layout -->
+    <!-- Use row class to create row in the container -->
+    <div class="row">
+      <!-- Left side: "Search for a City" and "History Search" Section-->
+      <div class="col-lg-3 bg-light m-2">
+        <h2>Search for a City:</h2>
+        <input id="search-city" class="form-control" type="text" placeholder="Enter a city">
+        <div class = "pt-2">
+          <button id ="search-button" type="submit" class="btn btn-primary mb-2">Search</button>
+        </div>
+        <hr style="background-color:gray">
+        <h2>History Search:</h2>
+        <div id="history-button"></div>
+      </div>
+
+      <!-- Right side: Weather display-->
+      <div class="col-lg-8">
+        <!-- Today Weather Display-->
+        <div class="row">
+          <div class="col-lg-11 d-none" id="today-weather">
+              <h2 id="city" class="align-middle"></h2>
+                <div class = "border">
+                  <img id="current-icon" class="img-fluid mx-auto d-block" alt="">
+                  <p id="temperature" class="text-center"></p>
+                  <p id="wind-speed" class="text-center"></p>
+                  <p id="humidity" class="text-center"></p>
+                </div>
+          </div>
+        </div>
+        <!-- Future Weather Display-->
+        <div class="row">
+          <div class="col-lg-11 d-none m-3" id="future-weather">
+            <h3>5-Day Forecast:</h3>
+            <div class = "row">
+              <div class="col-md-2 bg-info text-white m-2 forecast-div">
+                <p id="forecastDate"></p>
+                <img id="forecastIcon">
+                <p id="forecastInfo"></p>
+              </div>
+              <div class="col-md-2 bg-info text-white m-2 forecast-div">
+                <p id="forecastDate"></p>
+                <img id="forecastIcon">
+                <p id="forecastInfo"></p>
+              </div>
+              <div class="col-md-2 bg-info text-white m-2 forecast-div">
+                <p id="forecastDate"></p>
+                <img id="forecastIcon">
+                <p id="forecastInfo"></p>
+              </div>
+              <div class="col-md-2 bg-info text-white m-2 forecast-div">
+                <p id="forecastDate"></p>
+                <img id="forecastIcon">
+                <p id="forecastInfo"></p>
+              </div>
+              <div class="col-md-2 bg-info text-white m-2 forecast-div">
+                <p id="forecastDate"></p>
+                <img id="forecastIcon">
+                <p id="forecastInfo"></p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="./Assets/Script.js"></script>
+</body>
+</html>
