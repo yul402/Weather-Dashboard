@@ -1,6 +1,6 @@
 # Weather Dashboard
 
-### Deployment: Click [here](weather-dashboard-8dtn36wyv-yul402.vercel.app) to go to the weather dashboard. 
+### Deployment: Click [here](https://weather-dashboard-8dtn36wyv-yul402.vercel.app/) to go to the weather dashboard. 
 
 ## Description
 A simple web-based application that can be used to get current and future 5 days' weather condition, such as "Temperature", "Humidity" and "Wind Speed". Cities that users previously looked up will be saved and can be accessible in "History Search" section. Data used in this dashboard is get from ["Open Weather"](https://openweathermap.org/)
